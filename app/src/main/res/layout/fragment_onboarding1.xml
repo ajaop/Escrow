@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.Onboarding1Fragment">
+
+    <TextView
+
+        android:id="@+id/OnbTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/title_layout_marginStartAndEnd"
+        android:layout_marginTop="@dimen/title_layout_marginTop"
+        android:layout_marginEnd="@dimen/title_layout_marginStartAndEnd"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="@dimen/tide_lineSpacingExtra"
+        android:text="@string/onbTitle1"
+        android:textAppearance="@style/onbTitle" />
+
+    <TextView
+        android:id="@+id/OnbDesc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/desc_layout_marginStartAndEnd"
+        android:layout_marginTop="@dimen/desc_layout_marginTop"
+        android:layout_marginEnd="@dimen/desc_layout_marginStartAndEnd"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="@dimen/tide_lineSpacingExtra"
+        android:text="@string/onbDesc1"
+        android:textAppearance="@style/onbDesc" />
+
+    <RelativeLayout
+        android:id="@+id/payment_inf_img"
+        android:layout_width="@dimen/img_layout_widthAndHeight"
+        android:layout_height="@dimen/img_layout_widthAndHeight"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/img_layout_marginStart"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/img_layout_marginEnd"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/img_layout_marginTop"
+        android:background="@drawable/ic_payment_information_cuate_1"
+        />
+
+    <!--
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onbLoginBtn"
+        style="@style/onbLoginBtn1"
+        android:layout_width="@dimen/lgnReg_layout_width"
+        android:layout_height="@dimen/lgnReg_layout_height"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/lgn_layout_marginStart"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/lgnReg_layout_marginTop"
+        android:text="@string/loginBtn"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/onbRegisterBtn"
+        style="@style/onbRegisterBtn1"
+        android:layout_width="@dimen/lgnReg_layout_width"
+        android:layout_height="@dimen/lgnReg_layout_height"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/reg_layout_marginStart"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/lgnReg_layout_marginTop"
+        android:text="@string/registerBtn"
+        />
+
+-->
+</RelativeLayout>

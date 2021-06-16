@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Onboarding -->
+    <color name="onbTitle">#222F49</color>
+    <color name="onbDesc">#B3222F49</color>
+    <color name="loginBtn">#F1F1F1</color>
+    <color name="registerBtnText">#FFFFFF</color>
+    <color name="loginBtn2">#E5F7FE</color>
+    <color name="registerBtn2">#01B5FA</color>
+
+
+
+
+</resources>

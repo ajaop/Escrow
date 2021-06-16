@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Escrow</string>
+
+    <!-- Onboarding -->
+    <!-- Onboarding1 -->
+    <string name="onbTitle1">The third party\nyou can trust</string>
+    <string name="onbDesc1">Buying from online stores does not have to \nbe scary. We make it more secure.</string>
+    <string name="onboardingImgDesc">Onboarding-1 image</string>
+    <string name="loginBtn">Login</string>
+    <string name="registerBtn">Register</string>
+
+    <!-- Onboarding2 -->
+    <string name="onbTitle2">For buyers, sellers\nand freelancers</string>
+    <string name="onbDesc2">It doesn\'t matter if you are a buyer, seller or\nfreelancer, we have something for you.</string>
+
+    <!-- Onboarding3 -->
+    <string name="onbTitle3">Easy to\nsetup</string>
+    <string name="onbDesc3">Set up an escrow transaction in less than\nthree minutes. No hassles.</string>
+
+
+    <string name="emailTextView">Email</string>
+</resources>

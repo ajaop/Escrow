@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });
+        }); 
 
         regbtn.setOnClickListener(new View.OnClickListener()
         {

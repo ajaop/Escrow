@@ -1,35 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
-    <!-- TODO: edit the top cancel image on mac -->
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment">
 
     <TextView
-        android:id="@+id/login"
+        android:id="@+id/createAcct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="21dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"
-        android:text="@string/loginBtn"
+        android:layout_marginTop="45dp"
+        android:text="@string/createAcctTextView"
         android:textAppearance="@style/loginTitle"
         android:lineSpacingExtra="0sp"
         android:gravity="top"
         />
 
     <TextView
-        android:id="@+id/emailTextView"
+        android:id="@+id/extraCreateAcct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="73dp"
+        android:text="@string/extraCreate"
+        android:textAppearance="@style/label"
+        android:lineSpacingExtra="0sp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/phoneTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="148dp"
-        android:text="@string/emailTextView"
+        android:layout_marginTop="150dp"
+        android:text="@string/phone"
         android:textAppearance="@style/emailTextView"
         android:lineSpacingExtra="6sp"
         android:translationY="-2.92sp"
@@ -37,25 +50,23 @@
         />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailOutlinedTextField"
+        android:id="@+id/phoneNumOutlinedTextField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="172dp"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/emailHelper"
+            android:hint="@string/phone"
 
             />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -64,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="260dp"
         android:text="@string/passwordTextView"
         android:textAppearance="@style/emailTextView"
         android:lineSpacingExtra="6sp"
@@ -80,17 +91,16 @@
         android:layout_marginStart="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="302dp"
+        android:layout_marginTop="282dp"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <com.google.android.material.textfield.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwordTextView"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/passwordHelper"
-
-        />
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -102,22 +112,7 @@
         android:layout_marginStart="25dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="25dp"
-        android:layout_marginTop="405dp"
+        android:layout_marginTop="400dp"
         android:text="@string/loginBtn2" />
-
-    <TextView
-        android:id="@+id/forgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="160dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="490dp"
-        android:text="@string/forgotPassTextView"
-        android:textAppearance="@style/forgotPassTextView"
-
-        />
 
 </RelativeLayout>

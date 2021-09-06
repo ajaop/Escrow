@@ -49,22 +49,23 @@
        <!-- <item name="android:textColor">@color/registerBtnText</item> -->
     </style>
 
-  ]
-<!--
-   Login and register Button 2 !
-    <style name="onbLoginBtn2" parent="Widget.MaterialComponents.Button">
-        <item name="android:backgroundTint">@color/loginBtn2</item>
-        <item name="android:textAppearance">@style/onbLoginBtnText</item>
-        <item name="android:textColor">@color/registerBtn2</item>
-    </style>
 
-    <style name="onbRegisterBtn2" parent="Widget.MaterialComponents.Button">
-        <item name="android:backgroundTint">@color/registerBtn2</item>
-        <item name="android:textAppearance">@style/onbLoginBtnText</item>
-        <item name="android:textColor">@color/registerBtnText</item>
-    </style>
+    <!--
+      Login and register Button 2 !
+       <style name="onbLoginBtn2" parent="Widget.MaterialComponents.Button">
+           <item name="android:backgroundTint">@color/loginBtn2</item>
+           <item name="android:textAppearance">@style/onbLoginBtnText</item>
+           <item name="android:textColor">@color/registerBtn2</item>
+       </style>
+          -->
 
--->
+           <style name="loginBtn" parent="Widget.MaterialComponents.Button">
+               <item name="android:backgroundTint">@color/registerBtn2</item>
+               <item name="android:textAppearance">@style/onbLoginBtnText</item>
+               <item name="android:textColor">@color/registerBtnText</item>
+           </style>
+
+
     <!-- Login Activity -->
     <style name="loginTitle" parent="TextAppearance.AppCompat.Large">
         <item name="android:textSize"> 24sp</item>
@@ -73,11 +74,37 @@
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="emaiTextView" parent="TextAppearance.AppCompat.Large">
-        <item name="android:textSize"> 16sp</item>
+    <style name="emailTextView" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize"> 18sp</item>
         <item name="android:fontFamily">@font/roboto_bold</item>
         <item name="android:textColor">@color/onbTitle</item>
         <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="forgotPassTextView" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize"> 16sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/registerBtn2</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="textHelper" parent="">
+        <item name="android:textSize"> 14sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+
+    <style name="label" parent="">
+        <item name="android:textSize"> 16sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="lineHeight">20sp</item>
+        <item name="android:textColor">#B3222F49</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Escrow.TextInput" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
     </style>
 
 </resources>

@@ -19,4 +19,20 @@
 
 
     <string name="emailTextView">Email</string>
+    <string name="emailHelper">Your email</string>
+    <string name="passwordTextView">Password</string>
+    <string name="passwordHelper">***************</string>
+    <string name="loginBtn2">Log in</string>
+    <string name="forgotPassTextView">Forgot Password?</string>
+
+
+    <string name="createAcctTextView">Create Account</string>
+    <string name="extraCreate">Just a few details to get you all sorted</string>
+    <string name="emailAdd">Email Address</string>
+    <string name="full">Full Name</string>
+    <string name="user">Username</string>
+    <string name="phone">Phone Number</string>
+    <string name="next_btn">Next</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

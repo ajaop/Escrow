@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="130dp"
         android:text="@string/emailAdd"
         android:textAppearance="@style/emailTextView"
         android:lineSpacingExtra="6sp"
@@ -57,26 +57,32 @@
         android:layout_marginStart="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="152dp"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/TextInputLayoutStyle">
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailTextInputEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:maxLength="100"
         android:hint="@string/emailHelper"
+        android:inputType="textEmailAddress"
 
         />
+
+
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/userNameTextView"
+        android:id="@+id/firstNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="230dp"
-        android:text="@string/full"
+        android:layout_marginTop="250dp"
+        android:text="@string/first"
         android:textAppearance="@style/emailTextView"
         android:lineSpacingExtra="6sp"
         android:translationY="-2.92sp"
@@ -84,33 +90,40 @@
         />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/userNameOutlinedTextField"
+        android:id="@+id/firstNameOutlinedTextField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="272dp"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/TextInputLayoutStyle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstnameTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/full"
+            android:maxLength="30"
+            android:hint="@string/first"
+            android:inputType="text"
 
             />
+
+
     </com.google.android.material.textfield.TextInputLayout>
 
+
+
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/lastnameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="340dp"
-        android:text="@string/user"
+        android:layout_marginTop="370dp"
+        android:text="@string/last"
         android:textAppearance="@style/emailTextView"
         android:lineSpacingExtra="6sp"
         android:translationY="-2.92sp"
@@ -118,24 +131,31 @@
         />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fullNameOutlinedTextField"
+        android:id="@+id/lastNameOutlinedTextField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="362dp"
+        android:layout_marginTop="392dp"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/TextInputLayoutStyle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastnameTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/user"
+            android:maxLength="30"
+            android:hint="@string/last"
+            android:inputType="text"
 
             />
+
+
     </com.google.android.material.textfield.TextInputLayout>
+
+
 
 
 
@@ -148,7 +168,7 @@
         android:layout_marginStart="25dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="25dp"
-        android:layout_marginTop="489dp"
+        android:layout_marginTop="509dp"
         android:text="@string/next_btn" />
 
 </RelativeLayout>

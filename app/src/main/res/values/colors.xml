@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimary">#222F49</color>
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#03DAC5</color>
 
@@ -11,6 +11,17 @@
     <color name="registerBtnText">#FFFFFF</color>
     <color name="loginBtn2">#E5F7FE</color>
     <color name="registerBtn2">#01B5FA</color>
+
+    <!-- success text color -->
+    <color name="success">#27AE60</color>
+    <color name="error">#E87850</color>
+
+    <!-- Dashboard Colour -->
+    <color name="helloTextColor">#202046</color>
+    <color name="in_escrowColour">#F1F1F1</color>
+    <color name="escrowBalanceColor">#FFFFFF</color>
+    <color name="view_transactionColour">#32D5D8</color>
+
 
 
 

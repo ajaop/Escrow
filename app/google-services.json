@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "98503642172",
+    "project_id": "escrow-6e8c4",
+    "storage_bucket": "escrow-6e8c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98503642172:android:73eefff05c14e354588739",
+        "android_client_info": {
+          "package_name": "com.example.escrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98503642172-cn346oq0vms11os32e3mnc1km4epqkth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF4s8oS6CdYtkl1vgpAdNK9-NhJy-rlKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98503642172-cn346oq0vms11os32e3mnc1km4epqkth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

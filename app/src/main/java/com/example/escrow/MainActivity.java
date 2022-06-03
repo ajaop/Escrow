@@ -18,6 +18,8 @@ import com.example.escrow.onboarding.Onboarding2Fragment;
 import com.example.escrow.onboarding.Onboarding3Fragment;
 import com.example.escrow.onboarding.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private Button lgnbtn,regbtn;
     private  int current;
     private  static final  String TAG = "MainActivity";
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,19 @@ public class MainActivity extends AppCompatActivity {
 
         lgnbtn =  findViewById(R.id.onbLoginBtn);
         regbtn =  findViewById(R.id.onbRegisterBtn);
+
+      //  Firebase authentication Instance
+        auth = FirebaseAuth.getInstance();
+
+
+        if (auth.getCurrentUser() != null) {
+        //     User is signed in (getCurrentUser() will be null if not signed in)
+           // FirebaseAuth.getInstance().signOut();
+            updateUI(auth.getCurrentUser());
+        }
+
+
+
 
 
         // setting up the adapter
@@ -125,6 +141,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    public void updateUI(FirebaseUser user){
+        if(user != null){
+            Intent intent1 = new Intent(this, DashboardActivity.class);
+            intent1.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent1);
+        } else {
+            Log.d(TAG, "MovetoNewActvityAfterSignIN: Failed");
+        }
 
     }
 

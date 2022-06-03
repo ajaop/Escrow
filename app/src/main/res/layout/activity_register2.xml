@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".RegisterFragment">
+    tools:context=".RegisterActivity2">
 
     <TextView
         android:id="@+id/createAcct"
@@ -34,6 +34,47 @@
 
         />
 
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="130dp"
+        android:text="@string/user"
+        android:textAppearance="@style/emailTextView"
+        android:lineSpacingExtra="6sp"
+        android:translationY="-2.92sp"
+        android:gravity="top"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userNameOutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="152dp"
+
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
+        style="@style/TextInputLayoutStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:hint="@string/user"
+            android:inputType="text"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <TextView
         android:id="@+id/phoneTextView"
@@ -41,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="250dp"
         android:text="@string/phone"
         android:textAppearance="@style/emailTextView"
         android:lineSpacingExtra="6sp"
@@ -57,17 +98,24 @@
         android:layout_marginStart="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="272dp"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/TextInputLayoutStyle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="11"
             android:hint="@string/phone"
+            android:inputType="phone"
 
             />
+
+
     </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <TextView
         android:id="@+id/passwordTextView"
@@ -75,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="370dp"
         android:text="@string/passwordTextView"
         android:textAppearance="@style/emailTextView"
         android:lineSpacingExtra="6sp"
@@ -91,20 +139,25 @@
         android:layout_marginStart="20dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="282dp"
+        android:layout_marginTop="392dp"
+        app:passwordToggleEnabled="true"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/TextInputLayoutStyle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordTextInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="30"
             android:hint="@string/passwordTextView"
+            android:inputType="textPassword"
 
             />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/loginBtn"
+        android:id="@+id/registerBtn"
         style="@style/loginBtn"
         android:layout_width="335dp"
         android:layout_height="70dp"
@@ -112,7 +165,7 @@
         android:layout_marginStart="25dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="25dp"
-        android:layout_marginTop="400dp"
-        android:text="@string/loginBtn2" />
+        android:layout_marginTop="509dp"
+        android:text="@string/createAcctBtn" />
 
 </RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewPagerCard.CardFragment2">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Greencard2"
+        android:layout_width="320dp"
+        android:layout_height="157dp"
+        style="@style/ShapeAppearance.App.MediumComponent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_ellipse_2" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="94dp"
+            android:background="@drawable/ic_ellipse_1" />
+
+        <TextView
+            android:id="@+id/availableBal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/availableBal"
+            android:textAppearance="@style/in_escrow"
+            android:lineSpacingExtra="3sp"
+            android:translationY="-1.33sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/availableBalanceCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/availableBalanceCredit"
+            android:textAppearance="@style/escrowBalanceStyle"
+            android:lineSpacingExtra="-31sp"
+            android:gravity="top"/>
+
+
+        <TextView
+            android:id="@+id/open_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="130dp"
+            android:text="@string/openWallet"
+            android:textAppearance="@style/view_transactionStyle"
+            android:lineSpacingExtra="3sp"
+            android:translationY="-1.33sp"
+            android:gravity="top"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

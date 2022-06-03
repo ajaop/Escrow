@@ -8,6 +8,7 @@
     <string name="onboardingImgDesc">Onboarding-1 image</string>
     <string name="loginBtn">Login</string>
     <string name="registerBtn">Register</string>
+    <string name="createAcctBtn">Create Account</string>
 
     <!-- Onboarding2 -->
     <string name="onbTitle2">For buyers, sellers\nand freelancers</string>
@@ -29,10 +30,49 @@
     <string name="createAcctTextView">Create Account</string>
     <string name="extraCreate">Just a few details to get you all sorted</string>
     <string name="emailAdd">Email Address</string>
-    <string name="full">Full Name</string>
+    <string name="first">First Name</string>
+    <string name="last">Last Name</string>
     <string name="user">Username</string>
     <string name="phone">Phone Number</string>
     <string name="next_btn">Next</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_register2">RegisterActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <!-- Forgot Password page !-->
+    <string name="forgotPassTextView2">Forgot Password</string>
+    <string name="extraForpotPass">Enter your email to reset your password</string>
+    <string name="resetPassBtn">Reset Password</string>
+    <string name="goBackBtn">Go Back</string>
+
+    <!-- error display -->
+    <string name="emailError">Incorrect email format</string>
+    <string name="fullnameError">Only alphabets are allowed</string>
+    <string name="usernameError">Username is taken</string>
+    <string name="phoneError">maximum of 11 numbers allowed</string>
+    <string name="passwordError">Minimum of 6 characters allowed</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Dashboard Activity !-->
+    <string name="helloTextView">Hello,</string>
+    <string name="oladayo">Oladayo</string> <!--TODO: ALLOW USER NAME INSTEAD OF PUTTING STRING -->
+    <string name="in_escrow">IN ESCROW</string>
+    <string name="escorBalance">₦24,809.56</string>
+    <string name="escrowBalanceCredit">₦4,809.56</string>
+    <string name="escrowBalanceDebit">₦20,000.00</string>
+    <string name="view_transaction"> +View Transactions</string>
+    <string name="availableBal">AVAILABLE BALANCE</string>
+    <string name="openWallet"> +Open Wallet</string>
+    <string name="availableBalanceCredit">₦205,800.00</string>
+    <string name="quick_actio">Quick Actions</string>
+
+
 </resources>

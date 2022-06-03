@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewPagerCard.CardFragment1">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/Greencard1"
+        android:layout_width="320dp"
+        android:layout_height="157dp"
+        style="@style/ShapeAppearance.App.MediumComponent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_ellipse_2" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="94dp"
+            android:background="@drawable/ic_ellipse_1" />
+
+
+        <TextView
+            android:id="@+id/in_escrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            android:text="jakl"
+            android:textAppearance="@style/in_escrow"
+            android:lineSpacingExtra="3sp"
+            android:translationY="-1.33sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/escorBalance"
+            android:textAppearance="@style/escrowBalanceStyle"
+            android:lineSpacingExtra="-31sp"
+            android:gravity="top"/>
+
+            <ImageView
+                android:id="@+id/greenArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/ic_path1"
+                />
+
+        <TextView
+            android:id="@+id/escrowBalanceCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="98dp"
+            android:text="@string/escrowBalanceCredit"
+            android:textAppearance="@style/escrowBalanceCreditStyle"
+            android:lineSpacingExtra="6sp"
+            android:translationY="-2.92sp"
+            android:gravity="top"/>
+
+
+        <ImageView
+            android:id="@+id/redArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/ic_path2"
+            />
+
+        <TextView
+            android:id="@+id/escrowBalanceDebit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="98dp"
+            android:text="@string/escrowBalanceDebit"
+            android:textAppearance="@style/escrowBalanceCreditStyle"
+            android:lineSpacingExtra="6sp"
+            android:translationY="-2.92sp"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/view_transa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="130dp"
+            android:text="@string/view_transaction"
+            android:textAppearance="@style/view_transactionStyle"
+            android:lineSpacingExtra="3sp"
+            android:translationY="-1.33sp"
+            android:gravity="top"
+            />
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -33,8 +33,7 @@
 
     <!-- Register Button dimensions -->
     <dimen name="reg_layout_marginStart">213dp</dimen>
-
-
+    <dimen name="fab_margin">16dp</dimen>
 
 
 </resources>

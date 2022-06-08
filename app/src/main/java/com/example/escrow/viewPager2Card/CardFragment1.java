@@ -1,4 +1,4 @@
-package com.example.escrow.viewPagerCard;
+package com.example.escrow.viewPager2Card;
 
 import android.os.Bundle;
 
@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.escrow.R;
-import com.google.android.material.card.MaterialCardView;
 
 public class CardFragment1 extends Fragment {
 
@@ -27,7 +26,4 @@ public class CardFragment1 extends Fragment {
         return view;
     }
 
-    public CardView getCardView() {
-        return mCardView;
-    }
 }

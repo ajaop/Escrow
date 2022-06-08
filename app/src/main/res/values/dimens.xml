@@ -35,5 +35,12 @@
     <dimen name="reg_layout_marginStart">213dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
+    <!-- View pager spacing -->
+    <dimen name="pageMargin">20dp</dimen>
+    <dimen name="offset">30dp</dimen>
+
+    <!--Recycler view grid spacing -->
+    <dimen name="item_offset">4dp</dimen>
+
 
 </resources>

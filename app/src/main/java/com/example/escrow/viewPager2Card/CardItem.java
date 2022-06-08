@@ -1,4 +1,4 @@
-package com.example.escrow.viewPagerCard;
+package com.example.escrow.viewPager2Card;
 
 public class CardItem {
 
@@ -12,7 +12,7 @@ public class CardItem {
 
     private int mTitleResource, mSubtitle1Resource, mSubtitle2Resource, mSubtitle3Resource, mLinkResource, mImage1Resource, mImage2Resource;
 
-    public CardItem(int title, int subtitle1, int subtitle2, int subtitle3, int link, int image1, int image2, int viewType) {
+    public CardItem(int viewType, int title, int subtitle1, int subtitle2, int subtitle3, int link, int image1, int image2) {
         mTitleResource = title;
         mSubtitle1Resource = subtitle1;
         mSubtitle2Resource = subtitle2;
@@ -24,78 +24,56 @@ public class CardItem {
     }
 
 
+
     public void setTitle(int title) { this.mTitleResource = title; }
 
     public int getTitle() {
         return mTitleResource;
     }
 
-    public void setSubtitle1(int subtitle1) { this.mSubtitle1Resource = subtitle1; }
-
     public int getSubtitle1() { return mSubtitle1Resource; }
-
-
-    public void setSubtitle2(int subtitle2) { this.mSubtitle2Resource = subtitle2; }
 
     public int getSubtitle2() {
         return mSubtitle2Resource;
     }
 
-    public void setSubtitle3(int subtitle3) { this.mSubtitle3Resource = subtitle3; }
-
     public int getSubtitle3() {
         return mSubtitle3Resource;
     }
-
-    public void setImage1(int image1) { this.mImage1Resource = image1; }
 
     public int getImage1() {
         return mImage1Resource;
     }
 
-    public void setImage2(int image2) { this.mImage2Resource = image2; }
-
     public int getImage2() {
         return mImage2Resource;
     }
-
-    public void setLink(int link) { this.mLinkResource = link; }
 
     public int getLink() {
         return mLinkResource;
     }
 
-    public int getViewType(){return mviewType;}
 
-    /*
     private int mTitleResource_2, mSubtitleResource_2, mLinkResource_2;
 
-    public CardItem(int title_2, int  subtitle_2, int link_2, int viewType ){
+    public CardItem(int viewType, int title_2, int  subtitle_2, int link_2 ){
         mTitleResource_2 = title_2;
         mSubtitleResource_2 = subtitle_2;
         mLinkResource_2 = link_2;
         mviewType = viewType;
     }
 
-    public void setTitle_2(int title_2) { this.mTitleResource_2 = title_2; }
-
     public int getTitle_2() {
         return mTitleResource_2;
     }
 
-    public void setSUbtitle_2(int subtitle_2) { this.mSubtitleResource_2 = subtitle_2; }
-
     public int getSubtitle_2() { return mSubtitleResource_2; }
-
-    public void setLink_2(int link_2) { this.mLinkResource_2 = link_2; }
 
     public int getLink_2() {
         return mLinkResource_2;
     }
 
     public int getViewType(){return mviewType;}
-
-     */
 
 
 }

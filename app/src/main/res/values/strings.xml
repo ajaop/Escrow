@@ -73,6 +73,9 @@
     <string name="openWallet"> +Open Wallet</string>
     <string name="availableBalanceCredit">₦205,800.00</string>
     <string name="quick_actio">Quick Actions</string>
-
-
+    <!-- Quick action activities -->
+    <string name="initiate">Initiate Escrow\nTransaction</string>
+    <string name="disp">Disputes</string>
+    <string name="deposit">Deposit\nMoney</string>
+    <string name="wihdraw">Withdraw\nMoney</string>
 </resources>

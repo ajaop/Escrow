@@ -6,8 +6,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Escrow.SmallComponent
-        </item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Escrow.SmallComponent</item>
+
     </style>
 
     <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -128,8 +129,8 @@
         <item name="android:textStyle">normal</item>
     </style>
 
-    <!-- card view -->
-    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+    <!-- card view 1 -->
+    <style name="Card1Style" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerFamily">rounded</item>
         <item name="cardCornerRadius">8dp</item>
         <item name="cardBackgroundColor">#6B42DD</item>
@@ -167,7 +168,21 @@
         <item name="android:textStyle">normal</item>
     </style>
 
+    <!-- card view 2 -->
+    <style name="Card2Style" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">#fff</item>
+        <item name="android:foregroundTint">#fff</item>
+        <item name="cardElevation">5dp</item>
+    </style>
 
+    <style name="TitleText" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/helloTextColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 
 
 </resources>

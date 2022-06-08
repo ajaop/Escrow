@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/actionBox"
+        style="@style/Card2Style"
+        android:layout_width="175dp"
+        android:layout_height="128dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".viewPager2Card.CardFragment1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/wallet"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/ic_wallet" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="15dp"
+            android:gravity="top"
+            android:lineSpacingExtra="3sp"
+            android:text="@string/deposit"
+            android:textAppearance="@style/TitleText"
+            android:translationY="-1.33sp" />
+
+
+    </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>

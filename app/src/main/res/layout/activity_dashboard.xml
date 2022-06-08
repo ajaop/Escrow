@@ -32,7 +32,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:gravity="top"
         android:lineSpacingExtra="4sp"
         android:text="@string/oladayo"
@@ -48,11 +48,11 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="36dp"
         android:layout_marginEnd="89dp"
+        android:layout_marginBottom="21dp"
         android:background="@drawable/ic_bell"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
     <androidx.cardview.widget.CardView
@@ -60,9 +60,9 @@
         android:layout_width="33dp"
         android:layout_height="32dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="26dp"
-        android:layout_marginBottom="3dp"
+        android:layout_marginBottom="8dp"
         app:cardBackgroundColor="@color/helloTextColor"
         app:cardCornerRadius="250dp"
         app:layout_constraintBottom_toBottomOf="@+id/payment_inf_img"
@@ -90,14 +90,14 @@
         android:id="@+id/relativeLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="14dp"
-        app:layout_constraintBottom_toBottomOf="@+id/quick_action"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_marginTop="105dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/pager"
             android:layout_width="match_parent"
-            android:layout_height="217dp"
+            android:layout_height="207dp"
             android:orientation="horizontal"
 
             />
@@ -120,23 +120,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
         android:gravity="top"
         android:lineSpacingExtra="3sp"
         android:text="@string/quick_actio"
         android:textAppearance="@style/HelloText"
         android:translationY="-1.33sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/recyclerView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="305dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="22dp"
+        android:layout_height="255dp"
+
+        android:layout_marginTop="21dp"
         android:clipToPadding="false"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/quick_action" />
@@ -145,11 +144,11 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu"/>
+        app:menu="@menu/bottom_nav_menu" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

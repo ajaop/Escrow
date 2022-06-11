@@ -15,14 +15,14 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
         android:gravity="top"
         android:lineSpacingExtra="3sp"
         android:text="@string/helloTextView"
         android:textAppearance="@style/HelloText"
         android:translationY="-1.33sp"
-        app:layout_constraintBottom_toTopOf="@+id/nameText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nameText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/nameText"
@@ -32,14 +32,14 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="19dp"
         android:gravity="top"
         android:lineSpacingExtra="4sp"
-        android:text="@string/oladayo"
+        android:text="@string/dashboardUsername"
         android:textAppearance="@style/loginTitle"
         android:translationY="-1.9sp"
         app:layout_constraintStart_toStartOf="@+id/hello_"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/hello_" />
 
     <RelativeLayout
         android:id="@+id/payment_inf_img"
@@ -120,13 +120,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="1dp"
         android:gravity="top"
         android:lineSpacingExtra="3sp"
         android:text="@string/quick_actio"
         android:textAppearance="@style/HelloText"
         android:translationY="-1.33sp"
-        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout2"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -134,17 +134,17 @@
         android:layout_width="match_parent"
         android:layout_height="255dp"
 
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="2dp"
         android:clipToPadding="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/quick_action" />
+        app:layout_constraintTop_toBottomOf="@+id/quick_action" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -13,7 +13,6 @@
 
     <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxStrokeColor">@color/registerBtn2</item>
-
     </style>
 
 
@@ -184,5 +183,18 @@
         <item name="android:textStyle">normal</item>
     </style>
 
+
+    <!-- Initiate transaction -->
+    <style name="proceedBtn" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textAppearance">@style/onbLoginBtnText</item>
+        <item name="android:textColor">@color/registerBtnText</item>
+    </style>
+
+
+    <style name="InitiateTransactionTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="hintEnabled">false</item>
+    </style>
 
 </resources>

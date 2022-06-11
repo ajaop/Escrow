@@ -63,7 +63,7 @@
 
     <!-- Dashboard Activity !-->
     <string name="helloTextView">Hello,</string>
-    <string name="oladayo">Oladayo</string> <!--TODO: ALLOW USER NAME INSTEAD OF PUTTING STRING -->
+    <string name="dashboardUsername">Anonymous</string> <!--TODO: ALLOW USER NAME INSTEAD OF PUTTING STRING -->
     <string name="in_escrow">IN ESCROW</string>
     <string name="escorBalance">₦24,809.56</string>
     <string name="escrowBalanceCredit">₦4,809.56</string>
@@ -73,9 +73,21 @@
     <string name="openWallet"> +Open Wallet</string>
     <string name="availableBalanceCredit">₦205,800.00</string>
     <string name="quick_actio">Quick Actions</string>
+
     <!-- Quick action activities -->
     <string name="initiate">Initiate Escrow\nTransaction</string>
     <string name="disp">Disputes</string>
     <string name="deposit">Deposit\nMoney</string>
     <string name="wihdraw">Withdraw\nMoney</string>
+
+
+    <!-- Initiate transaction activity -->
+    <string name="create">Create</string>
+    <string name="secondParty">Second party user</string>
+    <string name="amt">Amount</string>
+    <string name="escrowLngt">Escrow Length</string>
+    <string name="inspectPeriod">Inspection period</string>
+    <string name="escrowLngtHelper">Choose duration of the transaction</string>
+    <string name="inspectPeriodHelper">Choose preferred inspection period</string>
+    <string name="proceedBtn">Proceed</string>
 </resources>

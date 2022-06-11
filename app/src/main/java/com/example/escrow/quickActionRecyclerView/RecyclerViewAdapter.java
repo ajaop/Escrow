@@ -5,25 +5,36 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.escrow.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder>  {
 
+    private Context mContext;
     private ArrayList<ActionItem> actionItems;
-    private Context mcontext;
+     OnItemClickListener listener;
 
-    public RecyclerViewAdapter(ArrayList<ActionItem> actionItems, Context mcontex){
+    public void setOnItemClickListener(OnItemClickListener listener){
+        this.listener = listener;
+    }
+
+    public interface OnItemClickListener {
+        public void onClick(ActionItem items);
+    }
+
+
+    public RecyclerViewAdapter(Context context, ArrayList<ActionItem> actionItems){
         this.actionItems = actionItems;
-        this.mcontext = mcontex;
+        this.mContext = context;
     }
 
     // This method returns our layout
@@ -40,6 +51,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
         // This will set the images in imageview
        holder.setCardData(actionItems.get(position));
+
+       ActionItem data = actionItems.get(position);
+       holder.itemView.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               listener.onClick(data);
+           }
+       });
     }
 
     @Override
@@ -47,17 +66,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return actionItems.size();
     }
 
-    public class RecyclerViewHolder extends RecyclerView.ViewHolder{
+    public static class RecyclerViewHolder extends RecyclerView.ViewHolder{
             private TextView titleTextView;
+            private CardView cardView;
+            private OnItemClickListener listener;
 
         public RecyclerViewHolder(@NonNull View itemView){
             super(itemView);
             titleTextView = itemView.findViewById(R.id.Title);
-
+            cardView = itemView.findViewById(R.id.actionBox);
         }
 
         void setCardData(ActionItem actionItem){
             titleTextView.setText(actionItem.getTitle());
+
         }
 
     }

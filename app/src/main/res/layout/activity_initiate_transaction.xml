@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitiateTransactionActivity">
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lineSpacingExtra="-2sp"
+        android:text="@string/create"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="17dp"
+        android:textAppearance="@style/loginTitle" />
+
+    <TextView
+        android:id="@+id/secondPartyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secondParty"
+        android:textAppearance="@style/emailTextView"
+        android:lineSpacingExtra="6sp"
+        android:translationY="-2.92sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="85dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameOutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
+        style="@style/InitiateTransactionTextInputLayoutStyle">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/usernameTextInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="100"
+        android:hint="@string/user"
+        android:inputType="textPersonName"
+
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amt"
+        android:textAppearance="@style/emailTextView"
+        android:lineSpacingExtra="6sp"
+        android:translationY="-2.92sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="205dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountOutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="227dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
+        style="@style/InitiateTransactionTextInputLayoutStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"
+            android:hint="@string/amt"
+            android:inputType="number"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/EscrowLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/escrowLngt"
+        android:textAppearance="@style/emailTextView"
+        android:lineSpacingExtra="6sp"
+        android:translationY="-2.92sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="325dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/escrowOutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="347dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:hintEnabled="false"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdown1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/escrowLngtHelper"
+            android:focusable="false"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/inspectionPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inspectPeriod"
+        android:textAppearance="@style/emailTextView"
+        android:lineSpacingExtra="6sp"
+        android:translationY="-2.92sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="445dp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inspectionPeriodOutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="467dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:hintEnabled="false"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Escrow.TextInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdown2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/inspectPeriodHelper"
+            android:focusable="false"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proceedBtn"
+        style="@style/proceedBtn"
+        android:layout_width="335dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="562dp"
+        android:text="@string/proceedBtn" />
+
+
+</RelativeLayout>

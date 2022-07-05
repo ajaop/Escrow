@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InitiateTransactionActivity"></activity>
+        <activity
+            android:name=".InitiateSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InitiateConfirmActivity"
+            android:exported="false" />
+        <activity android:name=".InitiateTransactionActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".DashboardActivity" />
         <activity

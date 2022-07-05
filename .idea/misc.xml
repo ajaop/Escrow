@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_anonymous.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_default_dot.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_selected_dot.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/tab_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.18931159420289856" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.14175724637681159" />
+        <entry key="app/src/main/res/layout/activity_initiate_confirm.xml" value="0.22955974842767296" />
+        <entry key="app/src/main/res/layout/activity_initiate_success.xml" value="0.2129003157419937" />
+        <entry key="app/src/main/res/layout/activity_initiate_transaction.xml" value="0.16317991631799164" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_card1.xml" value="0.1802536231884058" />
+        <entry key="app/src/main/res/layout/fragment_card2.xml" value="0.10925925925925926" />
+        <entry key="app/src/main/res/layout/fragment_onboarding1.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_quick_action.xml" value="0.10925925925925926" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

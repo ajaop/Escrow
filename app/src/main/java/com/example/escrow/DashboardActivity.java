@@ -62,9 +62,6 @@ public class DashboardActivity extends AppCompatActivity implements TabLayoutMed
         //Initialize username TextView
         nameTextView = (TextView) findViewById(R.id.nameText);
 
-
-
-
         //view pager for purple card
         mViewPager = (ViewPager2) findViewById(R.id.pager);
         //view pager for Action Card
@@ -93,7 +90,6 @@ public class DashboardActivity extends AppCompatActivity implements TabLayoutMed
 
         //Set CardAdapter as viewpager2adapter
         mViewPager.setAdapter(mCardAdapter);
-        mViewPager.setOffscreenPageLimit(3);
 
         mViewPager.setClipToPadding(false);
         mViewPager.setClipChildren(false);

@@ -90,4 +90,15 @@
     <string name="escrowLngtHelper">Choose duration of the transaction</string>
     <string name="inspectPeriodHelper">Choose preferred inspection period</string>
     <string name="proceedBtn">Proceed</string>
+
+
+    <!-- Initiate Confirm Activity -->
+    <string name="review">Review</string>
+    <string name="initiateTransacWith">You want to initiate an escrow transaction with</string>
+    <string name="chargesTextHelper">Charges</string>
+    <string name="confirmBtn">Confirm</string>
+
+    <!-- Initiate Success Activity -->
+    <string name="complete">Initiation Complete</string>
+    <string name="awesomeBtn">Awesome</string>
 </resources>

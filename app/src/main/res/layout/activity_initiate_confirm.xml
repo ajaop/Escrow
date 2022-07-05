@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitiateConfirmActivity">
+
+    <TextView
+        android:id="@+id/reviewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lineSpacingExtra="-2sp"
+        android:text="@string/review"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="17dp"
+        android:textAppearance="@style/loginTitle" />
+
+    <TextView
+        android:id="@+id/initiateTransacWithText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lineSpacingExtra="-2sp"
+        android:text="@string/initiateTransacWith"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="90dp"
+        android:textAppearance="@style/HelloText"/>
+
+    <TextView
+        android:id="@+id/nameOfUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lineSpacingExtra="-2sp"
+        android:text=""
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textAppearance="@style/HelloText"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="173dp"
+        android:layout_marginStart="38dp">
+
+        <TextView
+            android:id="@+id/amountTextHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="@string/amt"
+            android:textAppearance="@style/onbDesc"/>
+
+        <TextView
+            android:id="@+id/amountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textAppearance="@style/HelloText"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="38dp">
+
+        <TextView
+            android:id="@+id/escrowLengthTextHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="@string/escrowLngt"
+            android:fontFamily="@font/roboto_bold"
+            android:textAppearance="@style/onbDesc"/>
+
+        <TextView
+            android:id="@+id/escrowLengthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textAppearance="@style/HelloText"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="307dp"
+        android:layout_marginStart="38dp">
+
+        <TextView
+            android:id="@+id/inspectionPeriodTextHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="@string/inspectPeriod"
+            android:fontFamily="@font/roboto_bold"
+            android:textAppearance="@style/onbDesc"/>
+
+        <TextView
+            android:id="@+id/inspectionPeriodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textAppearance="@style/HelloText"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="374dp"
+        android:layout_marginStart="38dp">
+
+        <TextView
+            android:id="@+id/chargesTextHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text="@string/chargesTextHelper"
+            android:fontFamily="@font/roboto_bold"
+            android:textAppearance="@style/onbDesc"/>
+
+        <TextView
+            android:id="@+id/chargesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textAppearance="@style/HelloText"/>
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proceedBtn"
+        style="@style/proceedBtn"
+        android:layout_width="335dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="462dp"
+        android:text="@string/confirmBtn" />
+
+
+
+</RelativeLayout>

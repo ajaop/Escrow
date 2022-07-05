@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitiateSuccessActivity">
+
+    <RelativeLayout
+        android:id="@+id/transaction_success_img"
+        android:layout_width="@dimen/img_layout_widthAndHeight"
+        android:layout_height="@dimen/img_layout_widthAndHeight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/img_layout_marginStart"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="@dimen/img_layout_marginEnd"
+        android:background="@drawable/ic_transaction_success" />
+
+    <TextView
+        android:id="@+id/inititationCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="350dp"
+        android:lineSpacingExtra="-21sp"
+        android:text="@string/complete"
+        android:textAppearance="@style/onbTitle" />
+
+    <TextView
+        android:id="@+id/extraSuccessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="75dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="3sp"
+        android:textAppearance="@style/onbDesc"
+        android:translationY="-1.33sp" />
+<!--
+    <TextView
+        android:id="@+id/nameSuccessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="450dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text=""
+        android:lineSpacingExtra="3sp"
+        android:translationY="-1.33sp"
+        android:gravity="center_horizontal|top"
+        android:textAppearance="@style/HelloText" />
+
+    <TextView
+        android:id="@+id/extraSuccessTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/extraSuccess1"
+        android:lineSpacingExtra="3sp"
+        android:translationY="-1.33sp"
+        android:gravity="center_horizontal|top"
+        android:textAppearance="@style/onbDesc" />
+
+    <TextView
+        android:id="@+id/extraSuccessTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="472dp"
+        android:text="@string/extraSuccess2"
+        android:lineSpacingExtra="3sp"
+        android:translationY="-1.33sp"
+        android:gravity="center_horizontal|top"
+        android:textAppearance="@style/onbDesc" />
+
+-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/awesomeBtn"
+        android:layout_width="335dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="552dp"
+        android:text="@string/awesomeBtn"
+        style="@style/proceedBtn"/>
+
+
+
+
+</RelativeLayout>

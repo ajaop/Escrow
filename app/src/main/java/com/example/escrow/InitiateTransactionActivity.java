@@ -63,14 +63,14 @@ public class InitiateTransactionActivity extends AppCompatActivity {
         updateUI(mAuth.getCurrentUser());
 
         //Initiate edit text variables
-        amountEditText = (TextInputEditText) findViewById(R.id.amountTextInputEditText);
-        usernameEditText = (TextInputEditText) findViewById(R.id.usernameTextInputEditText);
+        amountEditText =  findViewById(R.id.amountTextInputEditText);
+        usernameEditText = findViewById(R.id.usernameTextInputEditText);
 
         //Initiate text inputlayout variables
-        usernameTextLayout = (TextInputLayout) findViewById(R.id.usernameOutlinedTextField);
-        amountTextLayout = (TextInputLayout) findViewById(R.id.amountOutlinedTextField);
-        escrowLengthTextLayout = (TextInputLayout) findViewById(R.id.escrowOutlinedTextField);
-        inspectionPeriodTextLayout = (TextInputLayout) findViewById(R.id.inspectionPeriodOutlinedTextField);
+        usernameTextLayout = findViewById(R.id.usernameOutlinedTextField);
+        amountTextLayout =  findViewById(R.id.amountOutlinedTextField);
+        escrowLengthTextLayout =  findViewById(R.id.escrowOutlinedTextField);
+        inspectionPeriodTextLayout =  findViewById(R.id.inspectionPeriodOutlinedTextField);
 
 
         //Edit text drop down 1 and 2
@@ -95,49 +95,6 @@ public class InitiateTransactionActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, R.layout.list_item, escrowLength);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, R.layout.list_item, inspectionPeriod);
 
-        /*
-
-        // prevent float keyboard from coming up
-        drop1.setInputType(0);
-        drop2.setInputType(0);
-        drop1.setOnClickListener(null);
-        drop2.setOnClickListener(null);
-
-         */
-
-
-/*
-        if(drop1.hasFocus()){
-            drop1.setInputType(0);
-        }
-
-
- */
-/*
-        if(drop2.hasFocus()){
-            drop2.setInputType(0);
-        }
-
- */
-
-/*
-        drop1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                in.hideSoftInputFromWindow(view.getApplicationWindowToken(), 0);
-            }
-        });
-
-        drop2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                in.hideSoftInputFromWindow(view.getApplicationWindowToken(), 0);
-            }
-        });
-
- */
         //Set the adapter
         drop1.setAdapter(adapter1);
         drop2.setAdapter(adapter2);
@@ -148,6 +105,21 @@ public class InitiateTransactionActivity extends AppCompatActivity {
 
                 if (!validateUsername() || !validateAmount() || !validateEscrowLength() || !validateAInspectionPeriod()) {
                     return;
+                } else {
+                    String inputName, inputAmount, inputEscrowLength, inputInspectionPeriod;
+                    inputName = usernameTextLayout.getEditText().getText().toString();
+                    inputAmount = amountTextLayout.getEditText().getText().toString();
+                    inputEscrowLength = escrowLengthTextLayout.getEditText().getText().toString();
+                    inputInspectionPeriod = inspectionPeriodTextLayout.getEditText().getText().toString();
+
+                    Intent intent1 = new Intent(getApplicationContext(), InitiateConfirmActivity.class);
+                    intent1.putExtra("Username", inputName);
+                    intent1.putExtra("Amount", inputAmount);
+                    intent1.putExtra("EscrowLength", inputEscrowLength);
+                    intent1.putExtra("InspectionPeriod", inputInspectionPeriod);
+                    startActivity(intent1);
+
+
                 }
             }
         });

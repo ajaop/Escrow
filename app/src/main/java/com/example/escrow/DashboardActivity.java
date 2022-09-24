@@ -5,16 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.escrow.activities.OngoingActivity;
 import com.example.escrow.quickActionRecyclerView.ActionItem;
 import com.example.escrow.quickActionRecyclerView.RecyclerViewAdapter;
 import com.example.escrow.quickActionRecyclerView.RecyclerViewItemDecorator;
@@ -22,6 +23,8 @@ import com.example.escrow.viewPager2Card.CardItem;
 import com.example.escrow.viewPager2Card.CardViewPager2Adapter;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.google.firebase.auth.FirebaseAuth;
@@ -144,6 +147,33 @@ public class DashboardActivity extends AppCompatActivity implements TabLayoutMed
         //Use ItemDecorator class to adjust spacing between cards
         RecyclerViewItemDecorator itemDecoration = new RecyclerViewItemDecorator(getApplicationContext(), R.dimen.item_offset);
         mrecyclerView.addItemDecoration(itemDecoration);
+
+        //Onclick listener for bottom navigation view
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        // Set Home selected
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
+        // Perform item selected listener
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()){
+                    case R.id.home:
+                        return true;
+
+                    case R.id.activities:
+                        startActivity(new Intent(getApplicationContext(), OngoingActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+
+
+
+                return false;
+            }
+        });
 
     }
 

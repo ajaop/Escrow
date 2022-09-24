@@ -4,19 +4,28 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_anonymous.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_bottombar_home.xml" value="0.198" />
+        <entry key="app/src/main/res/drawable/ic_bottombar_menu.xml" value="0.198" />
+        <entry key="app/src/main/res/drawable/ic_bottombar_paragraph.xml" value="0.198" />
         <entry key="app/src/main/res/drawable/ic_default_dot.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_ellipse_1.xml" value="0.128" />
         <entry key="app/src/main/res/drawable/ic_selected_dot.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/tab_line.xml" value="0.198" />
         <entry key="app/src/main/res/drawable/tab_selector.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.18931159420289856" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/layout/activity_initiate_confirm.xml" value="0.22955974842767296" />
         <entry key="app/src/main/res/layout/activity_initiate_success.xml" value="0.2129003157419937" />
         <entry key="app/src/main/res/layout/activity_initiate_transaction.xml" value="0.16317991631799164" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.24583333333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_ongoing.xml" value="0.18931159420289856" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_card1.xml" value="0.1802536231884058" />
         <entry key="app/src/main/res/layout/fragment_card2.xml" value="0.10925925925925926" />
+        <entry key="app/src/main/res/layout/fragment_completed.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_onboarding1.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_ongoing.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/fragment_quick_action.xml" value="0.10925925925925926" />
         <entry key="app/src/main/res/layout/list_item.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
@@ -28,5 +37,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.18931159420289856" />
+      </ProjectState>
+    </option>
   </component>
 </project>

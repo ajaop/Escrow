@@ -101,4 +101,7 @@
     <!-- Initiate Success Activity -->
     <string name="complete">Initiation Complete</string>
     <string name="awesomeBtn">Awesome</string>
+
+    <!-- Ongoing activity -->
+    <string name="ongoingTitle">Activities</string>
 </resources>
